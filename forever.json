@@ -1,0 +1,17 @@
+[
+	{
+		"uid": "farms-mon-lora",
+		"append": true,
+		"script": "run.sh",
+		"sourceDir": "/opt/farms/farms-mon/farms-mon-lora",
+		"workingDir": "/opt/farms/farms-mon/farms-mon-lora",
+		"command": "/bin/bash"
+	},
+	{
+		"uid": "farms-mon-api",
+		"append": true,
+		"script": "server.js",
+		"sourceDir": "/opt/farms/farms-mon/farms-mon-api",
+		"workingDir": "/opt/farms/farms-mon/farms-mon-api"
+	}
+]

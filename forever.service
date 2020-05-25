@@ -1,0 +1,14 @@
+[Unit]
+ Description=Forever Service
+ After=network.target
+
+ [Service]
+ Type=simple
+ Environment=PATH=/usr/bin:/usr/local/bin
+ WorkingDirectory=/opt/farms/farms-mon/farms-mon-forever
+ ExecStart=/usr/bin/forever /opt/farms/farms-mon/farms-mon-forever/forever.json
+ PIDFile=/var/run/forever-node-app.pid
+ User=root
+
+ [Install]
+ WantedBy=multi-user.target
